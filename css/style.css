@@ -827,6 +827,9 @@ body {
 @media (max-width: 768px) {
 }
 
+@media (max-width: 500px) {
+}
+
 /* 중간 와이드 배너 */
 
 .MainBanner {
@@ -992,12 +995,8 @@ body {
 @media (max-width: 1200px) {
   .MainInfo {
     padding: 10rem 0 0 0;
-  }
-
-  .MainInfo .tit_area {
     text-align: center;
   }
-
   .MainInfo .itm_wrap {
     display: flex;
     flex-direction: column;
@@ -1027,38 +1026,33 @@ body {
     inset: 0 0 0 0;
     transition: flex 0.5s;
     backdrop-filter: blur(1);
-    background: linear-gradient(to top, #00000000 -50%, #000000b3 40%);
+    background: linear-gradient(to bottom, #00000000 -50%, #000000b3 40%);
   }
 
   .MainInfo .itm_wrap .itm.on::before {
     content: "";
-    background: linear-gradient(to top, #00000000 0%, #000000b3 90%);
+    background: linear-gradient(to bottom, #00000000 0%, #000000b3 90%);
     backdrop-filter: blur(0);
   }
 
   .MainInfo .itm_wrap .itm01 {
-    background: url(../images/KWANGJUYO.jpg) no-repeat right center/700px auto;
+    background: url(../images/KWANGJUYO.jpg) no-repeat center center/cover;
   }
 
   .MainInfo .itm_wrap .itm02 {
-    background: url(../images/hwayo.jpg) no-repeat left center/700px auto;
+    background: url(../images/hwayo.jpg) no-repeat center center/cover;
   }
 
   .MainInfo .itm_wrap .itm03 {
-    background: url(../images/GAON.jpg) no-repeat center center/700px auto;
+    background: url(../images/GAON.jpg) no-repeat center center/cover;
   }
 
   .MainInfo .itm_wrap .itm04 {
-    background: url(../images/BICENA.jpg) no-repeat center center/700px auto;
-  }
-
-  .MainInfo .itm_wrap .itm .txt_wrap {
-    position: relative;
-    color: #fff;
+    background: url(../images/BICENA.jpg) no-repeat center center/cover;
   }
 
   .MainInfo .itm_wrap .itm .txt_wrap h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 600;
     text-transform: uppercase;
     writing-mode: horizontal-tb;
@@ -1087,8 +1081,8 @@ body {
 
   .MainInfo .itm_wrap .itm.on h3 {
     writing-mode: horizontal-tb;
-    font-size: 2.2rem;
-    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+    margin: 0 0 1.6rem 0;
   }
 
   .MainInfo .itm_wrap .itm .txt span {
@@ -1101,7 +1095,7 @@ body {
   .MainInfo .itm_wrap .itm .txt p {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     white-space: nowrap;
   }
 
@@ -1110,7 +1104,7 @@ body {
     line-height: 1.8rem;
     margin: 0 0 1.6rem 0;
     border: 1px solid #fff;
-    padding: 0.6rem 3rem;
+    padding: 0.4rem 2.4rem;
   }
 
   .MainInfo .itm_wrap .itm.on .txt a:hover {
@@ -1119,12 +1113,15 @@ body {
     margin: 0 0 1.6rem 0;
     background: #fff;
     color: #202124;
-    padding: 0.4rem 3rem;
+    padding: 0.4rem 2.4rem;
     transition: 0.3s;
   }
 }
 
 @media (max-width: 768px) {
+}
+
+@media (max-width: 500px) {
 }
 
 /* subpage */
